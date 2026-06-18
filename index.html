@@ -191,6 +191,17 @@ section{padding:60px 24px;}
 .who{background:var(--bg);}
 .who-grid{max-width:860px;margin:56px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
 @media(max-width:600px){.who-grid{grid-template-columns:1fr;}}
+
+/* ── TESTIMONIALS ── */
+.testi-scroll{max-width:100%;margin:56px auto 0;overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);}
+.testi-track{display:flex;gap:16px;width:max-content;animation:testiScroll 38s linear infinite;}
+.testi-scroll:hover .testi-track{animation-play-state:paused;}
+@keyframes testiScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.testi-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;width:300px;flex-shrink:0;}
+.testi-stars{color:#f0c040;font-size:1rem;letter-spacing:0.1em;margin-bottom:14px;}
+.testi-quote{font-size:0.92rem;line-height:1.65;color:var(--text);margin-bottom:18px;flex-grow:1;}
+.testi-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.88rem;letter-spacing:0.03em;color:var(--text);}
+.testi-role{font-size:0.76rem;color:var(--muted);margin-top:2px;}
 .who-card{background:var(--surface);padding:36px 28px;border:1px solid var(--border);border-radius:14px;}
 .who-icon{font-size:2.2rem;margin-bottom:14px;display:block;}
 .who-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.2rem;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:10px;}
@@ -606,19 +617,170 @@ footer{background:#030406;border-top:1px solid var(--border);padding:56px 32px 3
   </div>
   <div class="who-grid">
     <div class="who-card rv d1">
-      <span class="who-icon">🚑</span>
       <div class="who-title">Emergency Services</div>
       <p class="who-desc">Paramedics, firefighters, police officers and first aid instructors — train under realistic sensory pressure before you ever arrive on scene.</p>
     </div>
     <div class="who-card rv d2">
-      <span class="who-icon">🪖</span>
       <div class="who-title">Military & TCCC</div>
       <p class="who-desc">Combat medics, infantry, field surgeons — TCCC, BATLS, TECC. IED strikes, active contact, MEDEVAC extraction and battle comms.</p>
     </div>
     <div class="who-card rv d3">
-      <span class="who-icon">🩺</span>
       <div class="who-title">Healthcare & Clinical</div>
       <p class="who-desc">Nurses, doctors, paramedic students — clinical auscultation, patient distress, and ward environments that replicate real assessment conditions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" style="background:var(--bg);padding:80px 24px;">
+  <div class="section-center">
+    <p class="eyebrow rv">What Instructors Are Saying</p>
+    <h2 class="big-h rv d1">Real feedback.<br><em>From real trainers.</em></h2>
+  </div>
+
+  <div class="testi-scroll rv d2">
+    <div class="testi-track">
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Great idea. I really like that you can layer the sounds."</p>
+      <div class="testi-name">Lucy Repos</div>
+      <div class="testi-role">First Aid Instructor</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Great so far, well done."</p>
+      <div class="testi-name">Ann Osborn</div>
+      <div class="testi-role">First Aid Instructor</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"This is really, really good. Very useful indeed."</p>
+      <div class="testi-name">P3 First Aid Training</div>
+      <div class="testi-role">Training Provider</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Absolutely fantastic resource. I especially like the scenarios."</p>
+      <div class="testi-name">MERTS</div>
+      <div class="testi-role">Medical Emergency Response Training</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Fantastic. As a nurse I would love to be able to use the medical sounds too. Will definitely be using this a lot."</p>
+      <div class="testi-name">Denise Kindleysides</div>
+      <div class="testi-role">Nurse</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"I think this is great and will really help people enhance their scenario work. I have already started using it in my pre-hospital care."</p>
+      <div class="testi-name">Craig Taylor</div>
+      <div class="testi-role">Paramedic</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Fabulous idea to enhance training scenarios."</p>
+      <div class="testi-name">Candice Manby</div>
+      <div class="testi-role">First Aid Instructor</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"This is brilliant! Thanks for sharing!"</p>
+      <div class="testi-name">Debs Taylor</div>
+      <div class="testi-role">First Aid Trainer</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Already recommended this to our first aid training team. This is fantastic."</p>
+      <div class="testi-name">Fern Denner</div>
+      <div class="testi-role">Medical Support Officer</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Excellent."</p>
+      <div class="testi-name">Anthony Jemmott</div>
+      <div class="testi-role">Nurse, NHS</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Great idea. I really like that you can layer the sounds."</p>
+      <div class="testi-name">Lucy Repos</div>
+      <div class="testi-role">First Aid Instructor</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Great so far, well done."</p>
+      <div class="testi-name">Ann Osborn</div>
+      <div class="testi-role">First Aid Instructor</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"This is really, really good. Very useful indeed."</p>
+      <div class="testi-name">P3 First Aid Training</div>
+      <div class="testi-role">Training Provider</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Absolutely fantastic resource. I especially like the scenarios."</p>
+      <div class="testi-name">MERTS</div>
+      <div class="testi-role">Medical Emergency Response Training</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Fantastic. As a nurse I would love to be able to use the medical sounds too. Will definitely be using this a lot."</p>
+      <div class="testi-name">Denise Kindleysides</div>
+      <div class="testi-role">Nurse</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"I think this is great and will really help people enhance their scenario work. I have already started using it in my pre-hospital care."</p>
+      <div class="testi-name">Craig Taylor</div>
+      <div class="testi-role">Paramedic</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Fabulous idea to enhance training scenarios."</p>
+      <div class="testi-name">Candice Manby</div>
+      <div class="testi-role">First Aid Instructor</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"This is brilliant! Thanks for sharing!"</p>
+      <div class="testi-name">Debs Taylor</div>
+      <div class="testi-role">First Aid Trainer</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Already recommended this to our first aid training team. This is fantastic."</p>
+      <div class="testi-name">Fern Denner</div>
+      <div class="testi-role">Medical Support Officer</div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Excellent."</p>
+      <div class="testi-name">Anthony Jemmott</div>
+      <div class="testi-role">Nurse, NHS</div>
+    </div>
+
     </div>
   </div>
 </section>
@@ -688,5 +850,7 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.rv').forEach(el => obs.observe(el));
 </script>
+
+<!-- Google Translate -->
 </body>
 </html>
