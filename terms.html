@@ -4,186 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terms of Use — Scene Sounds</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --bg: #07090c;
-  --surface: #0f1318;
-  --border: #1a1f28;
-  --text: #f0f2f5;
-  --muted: #5a6270;
-  --orange: #ff6b35;
-}
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Barlow', sans-serif;
-  font-weight: 300;
-  line-height: 1.8;
-  padding-bottom: 80px;
-}
-header {
-  padding: 20px 24px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  background: rgba(7,9,12,0.95);
-  backdrop-filter: blur(12px);
-  z-index: 100;
-}
-.logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 0.08em;
-  color: var(--text);
-  text-decoration: none;
-}
-.logo span { color: var(--orange); }
-.back-btn {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-decoration: none;
-  border: 1px solid var(--border);
-  padding: 6px 14px;
-  border-radius: 6px;
-  transition: all 0.2s;
-}
-.back-btn:hover { color: var(--orange); border-color: var(--orange); }
-.container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 48px 24px;
-}
-.page-tag {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--orange);
-  margin-bottom: 12px;
-}
-h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 2.8rem;
-  letter-spacing: -0.01em;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-.updated {
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-bottom: 48px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--border);
-}
-h2 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--orange);
-  margin: 36px 0 12px;
-}
-p { color: var(--muted); margin-bottom: 14px; font-size: 0.95rem; }
-ul { color: var(--muted); padding-left: 20px; margin-bottom: 14px; font-size: 0.95rem; }
-ul li { margin-bottom: 8px; }
-a { color: var(--orange); text-decoration: none; }
-a:hover { text-decoration: underline; }
-footer {
-  border-top: 1px solid var(--border);
-  padding: 20px 24px;
-  text-align: center;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  color: var(--muted);
-  text-transform: uppercase;
-  position: fixed;
-  bottom: 0;
-  left: 0; right: 0;
-  background: var(--bg);
-}
-footer a { color: var(--muted); margin: 0 8px; }
-footer a:hover { color: var(--orange); }
+  :root { --bg:#07090c;--surface:#0f1318;--border:#1a1f28;--text:#f0f2f5;--muted:#5a6270;--orange:#ff6b35; }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;font-size:16px;line-height:1.75;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,9,12,0.96);border-bottom:1px solid var(--border);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:52px;}
+  .nav-brand{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;letter-spacing:0.06em;color:var(--text);text-decoration:none;}
+  .nav-brand span{color:var(--orange);}
+  .nav-link{font-family:'Barlow',sans-serif;font-size:0.82rem;color:var(--muted);text-decoration:none;}
+  .nav-link:hover{color:var(--orange);}
+  .wrap{max-width:680px;margin:0 auto;padding:100px 28px 80px;}
+  .doc-label{font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--orange);margin-bottom:12px;display:block;}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.8rem;line-height:1;letter-spacing:0.02em;color:var(--text);margin-bottom:20px;}
+  .meta{font-size:0.82rem;color:var(--muted);border-top:1px solid var(--border);padding-top:16px;margin-bottom:56px;display:flex;gap:24px;flex-wrap:wrap;}
+  h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:0.04em;color:var(--text);margin-top:44px;margin-bottom:10px;}
+  p{color:#b0b8c4;margin-bottom:14px;font-size:0.94rem;}
+  ul{color:#b0b8c4;margin-bottom:14px;padding-left:20px;font-size:0.94rem;}
+  li{margin-bottom:6px;}
+  a{color:var(--orange);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .highlight{background:var(--surface);border-left:3px solid var(--orange);border-radius:0 6px 6px 0;padding:14px 18px;margin-bottom:14px;font-size:0.9rem;color:#b0b8c4;}
+  footer{border-top:1px solid var(--border);padding:28px;text-align:center;font-size:0.78rem;color:var(--muted);}
 </style>
 </head>
 <body>
-
-<header>
-  <a href="https://scenesounds.com" class="logo">SCENE <span>SOUNDS</span></a>
-  <a href="https://scenesounds.com" class="back-btn">← Back to App</a>
-</header>
-
-<div class="container">
-  <div class="page-tag">Legal</div>
+<nav>
+  <a href="https://scenesounds.com" class="nav-brand">SCENE<span>SOUNDS</span></a>
+  <a href="https://scenesounds.com" class="nav-link">← Back to scenesounds.com</a>
+</nav>
+<div class="wrap">
+  <span class="doc-label">Legal</span>
   <h1>Terms of Use</h1>
-  <p class="updated">Last updated: May 2025 &nbsp;·&nbsp; Practical Development Ltd</p>
+  <div class="meta">
+    <span>Sector 3 Group Ltd</span>
+    <span>Last updated: September 2026</span>
+    <span>Version 1.0</span>
+  </div>
+  <div class="highlight">Please read these terms before using Scene Sounds. By creating an account or accessing the platform, you agree to them. If you do not agree, please do not use the service.</div>
 
-  <h2>1. Acceptance of Terms</h2>
-  <p>By accessing or using Scene Sounds at scenesounds.app ("the Service"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the Service. Scene Sounds is operated by Practical Development Ltd, Company Registration No. 14228504, registered in England and Wales.</p>
+  <h2>1. Who we are</h2>
+  <p>Scene Sounds is operated by Sector 3 Group Ltd, a company registered in England and Wales (Company No. 16566947), with its registered office at Kennards Harleston Road, Langmere, Diss, England, IP21 4PD.</p>
+  <p>You can contact us at <a href="mailto:info@scenesounds.app">info@scenesounds.app</a>.</p>
 
-  <h2>2. Description of Service</h2>
-  <p>Scene Sounds is a web-based audio training platform designed to support emergency services, military, and healthcare professionals in immersive scenario-based training. The Service provides ambient sound effects, pre-built scenario mixes, and tools to create custom audio environments for training purposes.</p>
+  <h2>2. What Scene Sounds is</h2>
+  <p>Scene Sounds is a web-based audio training platform designed for use in emergency services, military, healthcare and first aid training environments. It provides layered soundscapes and pre-built scenarios to support instructor-led training sessions.</p>
+  <p>Scene Sounds is a training aid. It is not a substitute for qualified instruction, formal certification or professional clinical judgement. All content is intended for use within a structured training environment by qualified or supervised instructors.</p>
 
-  <h2>3. Permitted Use</h2>
-  <p>You may use Scene Sounds for:</p>
+  <h2>3. Your account</h2>
+  <p>To access the platform you must create an account or use an access code provided by Sector 3 Group Ltd or an authorised organisation. You are responsible for keeping your login credentials secure and must not share your account or access code with others outside your authorised organisation.</p>
+  <p>You must be at least 18 years old to create an account. If you are using Scene Sounds with participants under 18, please refer to our Youth and Cadet Use guidance.</p>
+
+  <h2>4. Subscriptions and payment</h2>
+  <p>Scene Sounds is available on a free plan and a paid Pro plan. Pro subscriptions are billed monthly at £4.99 per month. Payments are processed securely by Stripe on behalf of Sector 3 Group Ltd.</p>
+  <p>You may cancel your subscription at any time. Cancellation takes effect at the end of your current billing period. We do not offer refunds for partial months.</p>
+  <p>Organisation licences are available on separate terms. Contact <a href="mailto:info@scenesounds.app">info@scenesounds.app</a> for details.</p>
+
+  <h2>5. Acceptable use</h2>
+  <p>You agree to use Scene Sounds only for lawful training purposes. You must not:</p>
   <ul>
-    <li>Professional training and educational purposes</li>
-    <li>Demonstration and evaluation of the platform</li>
-    <li>Creating and saving custom training scenarios for personal or organisational use</li>
-  </ul>
-  <p>You may not use Scene Sounds for:</p>
-  <ul>
-    <li>Any unlawful purpose or in violation of any applicable regulations</li>
-    <li>Reproducing, distributing, or selling the Service or its content without written permission</li>
-    <li>Attempting to reverse engineer, copy, or replicate the platform</li>
-    <li>Using the Service in a way that could cause harm to others</li>
+    <li>Use the platform in a way that could endanger, distress or harm any person</li>
+    <li>Reproduce, copy, resell or redistribute any part of the platform or its content</li>
+    <li>Attempt to reverse engineer, decompile or extract the source code</li>
+    <li>Use the platform to transmit harmful, offensive or unlawful content</li>
+    <li>Impersonate another person or organisation</li>
+    <li>Use the platform in any way that violates applicable law or regulation</li>
   </ul>
 
-  <h2>4. Intellectual Property</h2>
-  <p>Scene Sounds, including its name, logo, design, code, and content, is the intellectual property of Practical Development Ltd. The Scene Sounds brand and associated assets are subject to trademark application. Unauthorised use of the brand or content is strictly prohibited.</p>
-  <p>Audio content used within the Service is either owned by Practical Development Ltd, licensed for commercial use (CC0 or equivalent), or recorded specifically for this platform.</p>
+  <h2>6. Intellectual property</h2>
+  <p>All content on Scene Sounds, including the platform, sounds, scenarios, design and branding, is owned by or licensed to Sector 3 Group Ltd. Nothing in these terms grants you any right to use our intellectual property beyond what is necessary to use the platform as intended.</p>
 
-  <h2>5. Disclaimers</h2>
-  <p>Scene Sounds is a training aid only. It is not a substitute for formal professional training, clinical supervision, or regulatory compliance. Practical Development Ltd makes no warranties regarding the completeness or accuracy of the audio content for any specific clinical or operational application.</p>
-  <p>The Service is provided "as is" without warranty of any kind, express or implied. We do not guarantee uninterrupted or error-free operation of the Service.</p>
+  <h2>7. Disclaimer of liability</h2>
+  <p>Scene Sounds is provided as a training support tool. We make no representation that use of the platform will result in improved clinical outcomes, pass rates or operational performance. Instructors retain full responsibility for their training sessions and the wellbeing of participants.</p>
+  <p>To the fullest extent permitted by law, Sector 3 Group Ltd will not be liable for any loss, injury or damage arising from use of the platform, including any indirect, consequential or incidental loss.</p>
 
-  <h2>6. Limitation of Liability</h2>
-  <p>To the fullest extent permitted by law, Practical Development Ltd shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of Scene Sounds. Our total liability to you shall not exceed the amount paid by you (if any) for access to the Service.</p>
+  <h2>8. Service availability</h2>
+  <p>We aim to keep Scene Sounds available at all times but we cannot guarantee uninterrupted access. We may suspend or withdraw the service for maintenance, updates or reasons beyond our control. We will give reasonable notice where possible.</p>
 
-  <h2>7. User Data & Saved Scenarios</h2>
-  <p>Custom scenarios and settings you save within Scene Sounds are stored locally on your device using your browser's local storage. We do not store personal scenario data on our servers. If you clear your browser data, locally saved scenarios will be lost.</p>
+  <h2>9. Changes to these terms</h2>
+  <p>We may update these terms from time to time. We will notify you of significant changes by email or via the platform. Continued use of Scene Sounds after changes take effect constitutes acceptance of the updated terms.</p>
 
-  <h2>8. Third Party Services</h2>
-  <p>Scene Sounds may link to third-party services such as feedback forms. We are not responsible for the content or practices of any third-party services.</p>
-
-  <h2>9. Changes to Terms</h2>
-  <p>We reserve the right to update these Terms at any time. Continued use of the Service after changes constitutes acceptance of the revised Terms. We will indicate the date of the most recent update at the top of this page.</p>
-
-  <h2>10. Governing Law</h2>
-  <p>These Terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+  <h2>10. Governing law</h2>
+  <p>These terms are governed by the laws of England and Wales. Any disputes will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
 
   <h2>11. Contact</h2>
-  <p>For any questions regarding these Terms, please contact us at <a href="mailto:info@scenesounds.app">info@scenesounds.app</a></p>
+  <p>If you have any questions about these terms, please contact us at <a href="mailto:info@scenesounds.app">info@scenesounds.app</a>.</p>
 </div>
-
 <footer>
-  scenesounds.app &nbsp;|&nbsp; Practical Development Ltd &nbsp;|&nbsp; Reg. 14228504 &nbsp;|&nbsp;
-  <a href="https://scenesounds.com/terms.html">Terms</a>
-  <a href="https://scenesounds.com/privacy.html">Privacy</a>
+  Sector 3 Group Ltd (Trading as Scene Sounds) · Company No. 16566947 · Kennards Harleston Road, Langmere, Diss, IP21 4PD<br><br>
+  <a href="/terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="https://scenesounds.app">Launch App</a>
 </footer>
-
 </body>
 </html>
