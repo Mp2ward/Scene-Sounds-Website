@@ -798,6 +798,94 @@ footer{background:#030406;border-top:1px solid var(--border);padding:56px 32px 3
   </div>
 </section>
 
+<!-- PRICING -->
+<section style="background:#07090c;padding:80px 24px 100px;" id="pricing">
+  <div style="max-width:900px;margin:0 auto;">
+
+    <p class="eyebrow rv" style="margin-bottom:12px;">Pricing</p>
+    <h2 class="big-h rv d1" style="margin-bottom:8px;">Start free.<br><em>Upgrade when you're ready.</em></h2>
+    <p class="rv d2" style="color:var(--muted);font-size:0.95rem;max-width:480px;margin-bottom:56px;line-height:1.7;">No contracts, no hidden fees. Free accounts never expire. Pro is less than a coffee a month.</p>
+
+    <!-- FREE + PRO side by side -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px;">
+
+      <!-- FREE -->
+      <div class="rv d1" style="background:#0f1318;padding:40px 36px;">
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;">Free forever</p>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:4.5rem;color:var(--text);line-height:1;margin-bottom:24px;">£0</div>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;margin-bottom:28px;">Try the platform with no commitment. A good way to see if it fits your training style before you spend anything.</p>
+        <div style="border-top:1px solid var(--border);padding-top:24px;margin-bottom:32px;">
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:8px;">6 sounds per category</p>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:8px;">2 built-in scenarios</p>
+          <p style="font-size:0.82rem;color:var(--muted);">Any device, no install</p>
+        </div>
+        <a href="https://scenesounds.app" target="_blank" style="display:inline-block;padding:11px 28px;border:1px solid var(--border);border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:0.1em;color:var(--muted);text-decoration:none;text-transform:uppercase;">Open the app</a>
+      </div>
+
+      <!-- PRO -->
+      <div class="rv d2" style="background:#111408;padding:40px 36px;border-left:3px solid var(--orange);position:relative;">
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:20px;">Pro</p>
+        <div style="display:flex;align-items:flex-end;gap:8px;margin-bottom:24px;">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:4.5rem;color:var(--text);line-height:1;">£4.99</div>
+          <div style="font-size:0.9rem;color:var(--muted);padding-bottom:10px;">per month · or £49.99/year</div>
+        </div>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;margin-bottom:28px;">Everything unlocked. Full sound library, all scenarios, the custom builder. Built for instructors who use it regularly.</p>
+        <div style="border-top:1px solid rgba(255,107,53,0.2);padding-top:24px;margin-bottom:32px;">
+          <p style="font-size:0.82rem;color:var(--text);margin-bottom:8px;">All 85+ sounds across 6 categories</p>
+          <p style="font-size:0.82rem;color:var(--text);margin-bottom:8px;">All 11 built-in scenarios</p>
+          <p style="font-size:0.82rem;color:var(--text);margin-bottom:8px;">Custom scenario builder</p>
+          <p style="font-size:0.82rem;color:var(--text);">Live sound mixer</p>
+        </div>
+        <a href="https://scenesounds.app" target="_blank" style="display:inline-block;padding:12px 32px;background:var(--orange);border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.9rem;letter-spacing:0.1em;color:#0a0c0f;text-decoration:none;text-transform:uppercase;">Start Pro</a>
+      </div>
+    </div>
+
+    <!-- ENTERPRISE full width -->
+    <div class="rv d3" style="background:#0f1318;padding:40px 36px;display:flex;align-items:flex-start;gap:48px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:220px;">
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;">For organisations</p>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--text);line-height:1;margin-bottom:12px;">Bespoke licensing</h3>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">For ambulance services, cadet forces, NHS trusts and training providers who need a branded version, bulk access or a managed contract. Pricing reflects your organisation's size and requirements.</p>
+      </div>
+      <div style="flex:1;min-width:240px;">
+        <p style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;">Your branding, your subdomain</p>
+        <p style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;">Bulk user management</p>
+        <p style="font-size:0.82rem;color:var(--muted);margin-bottom:24px;">Annual licence with support included</p>
+        <div id="enterpriseForm" style="display:none;">
+          <input id="entName" type="text" placeholder="Your name" style="width:100%;background:#0a0c0f;border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-bottom:8px;font-family:'Barlow',sans-serif;font-size:0.85rem;color:var(--text);outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--orange)'" onblur="this.style.borderColor='var(--border)'">
+          <input id="entEmail" type="email" placeholder="Work email" style="width:100%;background:#0a0c0f;border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-bottom:8px;font-family:'Barlow',sans-serif;font-size:0.85rem;color:var(--text);outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--orange)'" onblur="this.style.borderColor='var(--border)'">
+          <input id="entOrg" type="text" placeholder="Organisation" style="width:100%;background:#0a0c0f;border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-bottom:12px;font-family:'Barlow',sans-serif;font-size:0.85rem;color:var(--text);outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--orange)'" onblur="this.style.borderColor='var(--border)'">
+          <button onclick="submitEnterprise()" style="background:var(--orange);color:#0a0c0f;border:none;border-radius:6px;padding:11px 28px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.88rem;letter-spacing:0.1em;cursor:pointer;text-transform:uppercase;">Send enquiry</button>
+          <p id="entMsg" style="font-size:0.78rem;margin-top:10px;min-height:14px;font-family:'Barlow Condensed',sans-serif;"></p>
+        </div>
+        <button id="entBtn" onclick="document.getElementById('enterpriseForm').style.display='block';this.style.display='none';" style="background:transparent;border:1px solid var(--border);border-radius:6px;padding:11px 28px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:0.1em;color:var(--muted);cursor:pointer;text-transform:uppercase;">Get in touch</button>
+      </div>
+    </div>
+
+  </div>
+  <style>
+    @media(max-width:640px){
+      #pricing [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;}
+      #pricing [style*="padding:40px 36px"]{padding:28px 20px!important;}
+      #pricing [style*="gap:48px"]{gap:24px!important;}
+    }
+  </style>
+</section>
+
+<script>
+function submitEnterprise() {
+  const name = document.getElementById('entName').value.trim();
+  const email = document.getElementById('entEmail').value.trim();
+  const org = document.getElementById('entOrg').value.trim();
+  const msg = document.getElementById('entMsg');
+  if (!name || !email || !org) { msg.textContent = 'Please fill in all fields'; msg.style.color = '#ff4444'; return; }
+  window.location.href = `mailto:info@scenesounds.app?subject=Organisation enquiry from ${org}&body=Name: ${name}%0AEmail: ${email}%0AOrganisation: ${org}`;
+  msg.textContent = 'Thanks, we will be in touch shortly.';
+  msg.style.color = '#3bba6e';
+}
+</script>
+
+
 <!-- CTA -->
 <section class="cta">
   <div class="cta-glow"></div>
@@ -805,9 +893,9 @@ footer{background:#030406;border-top:1px solid var(--border);padding:56px 32px 3
   <a href="https://scenesounds.app" class="cta-url rv d1" target="_blank">scenesounds.app</a>
   <div class="cta-btns rv d2">
     <a href="https://scenesounds.app" class="btn-primary" target="_blank">Try It Free</a>
-
   </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
@@ -835,7 +923,7 @@ footer{background:#030406;border-top:1px solid var(--border);padding:56px 32px 3
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="f-legal">SceneSounds.com &nbsp;|&nbsp; Practical Development Ltd &nbsp;|&nbsp; Company Reg: 14228504</div>
+      <div class="f-legal">SceneSounds.com &nbsp;|&nbsp; Sector 3 Group Ltd &nbsp;|&nbsp; Company Reg: 16566947</div>
       <div class="f-legal-links">
         <a href="/terms.html">Terms</a>
         <a href="/privacy.html">Privacy</a>
