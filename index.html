@@ -841,8 +841,8 @@ footer{background:#030406;border-top:1px solid var(--border);padding:56px 32px 3
           <p style="font-size:0.82rem;color:var(--text);margin-bottom:8px;">Custom scenario builder</p>
           <p style="font-size:0.82rem;color:var(--text);">Live sound mixer</p>
         </div>
-        <button data-ms-price:add="prc_pro-monthly-c9py0vvw" style="display:block;width:100%;text-align:center;padding:13px;background:var(--orange);border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.9rem;letter-spacing:0.1em;color:#0a0c0f;text-transform:uppercase;margin-bottom:8px;cursor:pointer;border:none;">Monthly — £3.99/mo</button>
-        <button data-ms-price:add="prc_pro-annual-m5pz0vzt" style="display:block;width:100%;text-align:center;padding:12px;background:transparent;border:1px solid var(--orange);border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.9rem;letter-spacing:0.1em;color:var(--orange);text-transform:uppercase;cursor:pointer;">Annual — £39.00/yr <span style="font-size:0.75rem;opacity:0.7;">(save £8.88)</span></button>
+        <button onclick="upgradePlan('prc_pro-monthly-c9py0vvw')" style="display:block;width:100%;text-align:center;padding:13px;background:var(--orange);border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.9rem;letter-spacing:0.1em;color:#0a0c0f;text-transform:uppercase;margin-bottom:8px;cursor:pointer;border:none;">Monthly — £3.99/mo</button>
+        <button onclick="upgradePlan('prc_pro-annual-m5pz0vzt')" style="display:block;width:100%;text-align:center;padding:12px;background:transparent;border:1px solid var(--orange);border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.9rem;letter-spacing:0.1em;color:var(--orange);text-transform:uppercase;cursor:pointer;">Annual — £39.00/yr <span style="font-size:0.75rem;opacity:0.7;">(save £8.88)</span></button>
       </div>
     </div>
 
@@ -879,6 +879,13 @@ footer{background:#030406;border-top:1px solid var(--border);padding:56px 32px 3
 </section>
 
 <script>
+async function upgradePlan(priceId) {
+  try {
+    await window.$memberstackDom.purchasePlansWithCheckout({ priceId });
+  } catch(e) {
+    window.open(`https://scenesounds.app`, '_blank');
+  }
+}
 function submitEnterprise() {
   const name = document.getElementById('entName').value.trim();
   const email = document.getElementById('entEmail').value.trim();
